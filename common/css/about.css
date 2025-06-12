@@ -1,0 +1,360 @@
+#above_the_fold {
+  padding-top: 80px;
+}
+
+#above_the_fold h2 {
+  font-size: 40px;
+  font-family: 'Open_Sans_Bold';
+  margin-bottom: 24px;
+}
+
+#above_the_fold h2 span {
+  font-size: 64px;
+  font-family: 'Open_Sans_Extrabold';
+  color: #b80717;
+}
+
+#above_the_fold p {
+  max-width: 970px;
+  width: 100%;
+  margin-bottom: 24px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+#above_the_fold p:last-of-type {
+  margin-bottom: 80px;
+}
+
+.img_about {
+  width: 100%;
+}
+
+/* ------------------------- SECTION: Mission Vision -------------------------- */
+
+#mission_vision {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+#mission_vision:before,
+#mission_vision:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  width: 50%;
+  height: 100%;
+}
+
+#mission_vision {
+  display: flex;
+}
+
+#mission_vision .max_width > :first-child {
+  margin-right: auto;
+}
+
+#mission_vision .vision,
+#mission_vision .mission {
+  width: 50%;
+}
+
+#mission_vision .vision,
+#mission_vision .mission {
+  padding-top: 68px;
+  padding-bottom: 92px;
+  
+}
+
+#mission_vision .vision {
+  background-color: #9F0614;
+  padding-left: 20px;
+  padding-right: 7.292vw;
+}
+
+#mission_vision .vision h2, 
+#mission_vision .vision p {
+  margin-left: auto;
+  max-width: 510px;
+  width: 100%;
+}
+
+#mission_vision .mission {
+  background-color: #C99501;
+  padding-left: 7.292vw;
+  padding-right: 20px;
+}
+
+#mission_vision .mission h2, 
+#mission_vision .mission p {
+  margin-right: auto;
+  max-width: 510px;
+  width: 100%;
+}
+
+#mission_vision .vision h2,
+#mission_vision .mission h2 {
+  font-family: 'Open_Sans_Bold';
+  font-size: 32px;
+  margin-bottom: 24px;
+  color: rgb(255, 255, 255);
+}
+
+#mission_vision .vision p,
+#mission_vision .mission p {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-align: justify;
+}
+
+/* ------------------------- SECTION: Editorial Board -------------------------- */
+
+#editorial_board h2 {
+  font-family: 'Open_Sans_Bold';
+  font-size: 40px;
+  position: relative;
+  padding-bottom: 24px;
+  margin-bottom: 60px;
+}
+
+#editorial_board h2:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 200px;
+  height: 4px;
+  background-color: #b80717;
+  border-radius: 4px;
+}
+
+#editorial_board .team {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+#editorial_board .team > ul {
+  width: 66%;
+  border-bottom: 2px solid #9f0614;
+  margin-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#editorial_board .team:last-of-type > ul {
+  border-bottom: none;
+}
+
+#editorial_board .team .team_title {
+  font-size: 22px;
+  font-family: 'Open_Sans_Bold';
+  margin-right: auto;
+  padding-top: 35px;
+  padding-right: 20px;
+  width: 31.707%;
+}
+
+#editorial_board .team .staffs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#editorial_board .team .person {
+  width: 50%;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+margin-bottom: 50px;}
+
+#editorial_board .team .person .profile_pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: rgb(196, 196, 196);
+  border: 2px solid #9f0614;
+  margin-right: 15px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#editorial_board .team .person .person_details {
+  width: 61%;
+}
+
+#editorial_board .team .person .name {
+  font-family: 'Open_Sans_Bold';
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+#editorial_board .team .person .position {
+  font-family: 'Open_Sans_Semibold';
+  font-style: italic;
+  color: #E1A700;
+  text-transform: uppercase;
+}
+
+
+/* ------------------- MEDIA QUERIES ------------------- */
+
+@media( max-width:1085px ) {
+
+  #editorial_board .team .person .profile_pic {
+    margin-bottom: 20px;
+  }
+  
+  #editorial_board .team .person .person_details {
+    width: 100%;
+  }
+}
+
+@media( max-width:768px ) {
+
+  #mission_vision {
+    flex-wrap: wrap;  
+  }
+  
+  #mission_vision .vision, 
+  #mission_vision .mission {
+    width: 100%;
+    padding: 80px 20px;
+  }
+
+  #mission_vision .vision h2, 
+  #mission_vision .mission h2 {
+    margin-left: 0px;
+    margin-right: 0px;
+    max-width: 612px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #mission_vision .vision p, 
+  #mission_vision .mission p {
+    margin: 0px;
+    max-width: 612px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #editorial_board h2 {
+    text-align: center;
+  }
+
+  #editorial_board h2:after {
+    left: calc( 50% - 100px );
+  }
+
+  #editorial_board .team .team_title {
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 34px;
+  }
+
+  #editorial_board .team > ul {
+    width: 100%;
+  }
+
+  #editorial_board .team .team_head {
+    width: 100%;
+  }
+
+  #editorial_board .team .team_head .person {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #editorial_board .team .person {
+    flex-wrap: nowrap;
+  }
+
+  #editorial_board .team .person .profile_pic {
+    margin-bottom: 0px;
+    width: 100px;
+    width: 13vw;
+    height: 13vw;
+  }
+
+  #editorial_board .team .person .person_details {
+    width: 24vw;
+  }
+
+  #editorial_board .team_head .person .person_details {
+    width: 28vw;
+  }
+
+  #editorial_board .team_head .person {
+    width: auto;
+  }
+}
+
+@media( max-width:640px ) {
+
+  #mission_vision .vision h2, 
+  #mission_vision .mission h2,
+  #mission_vision .vision p, 
+  #mission_vision .mission p {
+    max-width: 510px;
+  }
+
+  #editorial_board .team > ul > li {
+    max-width: 443px;
+    width: 100%;
+    margin-left: auto;
+  }
+
+  #editorial_board .team > ul,
+  #editorial_board .team .team_title,
+  #editorial_board .team .person {
+    margin-bottom: 40px;
+    padding-right: 0px;
+  }
+  
+  #editorial_board .team .staffs .person {
+    width: 100%;
+  }
+
+  #editorial_board .team .person .profile_pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  #editorial_board .team .person .person_details,
+  #editorial_board .team .team_head .person .person_details {
+    width: 48vw;
+  }
+
+  #editorial_board .team .team_head .person {
+    justify-content: flex-start;
+  }
+}
+
+@media( max-width:480px ) {
+  
+  #above_the_fold h2 {
+    font-size: 9vw;  
+  }
+  
+  #above_the_fold h2 span {
+    font-size: 13.5vw;
+  }
+
+  #mission_vision .vision p, 
+  #mission_vision .mission p {
+    text-align: left;
+  }
+
+  #editorial_board .team > ul {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

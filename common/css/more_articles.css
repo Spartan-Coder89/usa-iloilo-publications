@@ -1,0 +1,244 @@
+#before_more_articles {
+  padding: 40px 0px;
+}
+
+#more_articles {
+  display: flex;
+  align-items: center; 
+  flex-wrap: wrap;
+  padding-bottom: 110px;
+}
+
+#more_articles .paragraph {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+#more_articles .more_articles_title {
+  font-family: 'Open_Sans_Bold';
+  font-size: 32px;
+  margin-right: auto;
+}
+
+#more_articles .articles_list {
+  width: 100%;
+  margin-top: 24px;
+}
+
+#more_articles .filter {
+  display: flex;
+  align-items: center;
+}
+
+#more_articles .filter label{
+  margin-right: 15px;
+}
+
+#more_articles .filter .select_wrap {
+  position: relative;
+  width: 226px;
+  height: 42px;
+}
+
+#more_articles .filter select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  border: none;
+  padding: 10px 24px;
+  border: 1px solid #EBEBEB;
+  background-color: #F9F9F9;
+  border-radius: 50px;
+  width: 226px;
+}
+
+#more_articles .filter .select_wrap svg {
+  position: absolute;
+  top: calc( 50% - 6px );
+  right: 28px;
+  z-index: 1;
+}
+
+#more_articles .articles_list {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+
+#more_articles .articles_list > * {
+  margin-right: 2.45%;
+  margin-bottom: 55px;
+  max-width: 31.7%;
+  width: 100%;
+}
+
+#more_articles .articles_list > :nth-child(3n) {
+  margin-right: 0px;
+}
+
+#more_articles .pagination {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#more_articles .pagination {
+  max-width: 380px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#more_articles .pagination,
+#more_articles .pagination li {
+  display: flex;
+  align-items: center;
+}
+
+#more_articles .pagination li {
+  width: 55px;
+  margin-right: auto;
+  border-radius: 6px;
+}
+
+#more_articles .pagination li > a,
+#more_articles .pagination .current_page span {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  max-width: 100%;
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+}
+
+#more_articles .pagination li > a svg {
+  margin: 0px auto;
+}
+
+#more_articles .pagination > li:last-of-type {
+  margin-right: 0px;
+}
+
+#more_articles .pagination .prev,
+#more_articles .pagination .next {
+  border: 1px solid #BCBCBC;
+}
+
+#more_articles .pagination .prev svg,
+#more_articles .pagination .next svg {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+#more_articles .pagination .prev:hover svg path,
+#more_articles .pagination .next:hover svg path {
+  fill: #B80717;
+}
+
+#more_articles .pagination .current_page,
+#more_articles .pagination .upcoming_page {
+  border: 1px solid #B80717;
+}
+
+#more_articles .pagination .current_page {
+  background-color: #B80717;
+}
+
+#more_articles .pagination .current_page span,
+#more_articles .pagination .upcoming_page a{
+  font-family: 'Open_Sans_Bold';
+  color: rgb(184, 7, 23);
+}
+
+#more_articles .pagination .current_page span {
+  color: rgb(255, 255, 255);
+}
+
+#more_articles .pagination .of span {
+  font-family: 'Open_Sans_Extrabold';
+  color: #BCBCBC;
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+/* ------------- MEDIA QUERIES ------------- */
+
+@media( max-width:980px ) {
+  
+  #more_articles .articles_list > *,
+  #more_articles .articles_list > :nth-child(3n){
+    max-width: 48.5%;
+    margin-right: auto;
+  }
+  
+  #more_articles .articles_list > :nth-child(2n) {
+    margin-right: 0px;
+  }
+  
+  #more_articles .vertical_card {
+    max-width: 100%;
+  }
+}
+
+@media( max-width:768px ) {
+  
+  #before_more_articles {
+    padding: 20px 0px;
+  }
+
+  #more_articles .more_articles_title {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  #more_articles .filter label {
+    margin-right: 45px;
+  }
+
+  #more_articles .articles_list > *, 
+  #more_articles .articles_list > :nth-child(3n) {
+    max-width: 100%;
+  }
+
+  #more_articles .articles_list > * {
+    margin-bottom: 32px;
+  }
+
+  #more_articles .vertical_card .post_thumbnail {
+    height: 52vw;
+  }
+}
+
+@media( max-width:480px ) {
+
+  #more_articles .filter {
+    flex-wrap: wrap;  
+  }
+  
+  #more_articles .filter label {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media( max-width:380px ) {
+
+  #more_articles .pagination {
+    padding: 0px;
+    justify-content: center;
+  }
+
+  #more_articles .pagination li {
+    margin-right: 4%;
+  }
+  
+  #more_articles .pagination .of {
+    width: 25px;
+    width: 5vw;
+  }
+}

@@ -1,0 +1,9 @@
+#adminmenu .wp-menu-image img {
+  width: 20px;
+  opacity: 1;
+}
+
+#adminmenu #menu-posts-usa_pub_graphics .wp-menu-image img {
+  width: 17px;
+  padding-top: 7px;
+}

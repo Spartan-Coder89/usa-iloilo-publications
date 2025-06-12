@@ -1,0 +1,46 @@
+body {
+  background: #fcfcfc;
+}
+
+body * {
+  outline: none;
+}
+
+body.login div#login h1 a {
+  background-image: url( '../../images/img_header_logo.png' );
+ padding-bottom: 30px; 
+ }
+
+ .login #login_error, .login .message, .login .success {
+  border-left: 4px solid #a70b0b; 
+}
+
+.wp-core-ui .button-primary {
+  background: #a70b0b;
+  border-color: #a70b0b;
+  color: white;
+}
+
+.wp-core-ui .button-primary:hover, .wp-core-ui .button-primary:focus {
+  background: #b50c0c;
+  border-color: #990a0a;
+  color: white;
+}
+
+input[type=checkbox]:checked::before {
+  content: url( '../../images/admin/wp_checkbox_check.svg' );
+  
+}
+
+.login #backtoblog a, .login #nav a {
+  color: #1d2327;
+}
+
+.login #backtoblog a:hover, .login #nav a:hover {
+  color: #c4980c;
+}
+
+.dashicons-visibility:before,
+.login .button.wp-hide-pw .dashicons {
+  color: #b50c0c;
+}

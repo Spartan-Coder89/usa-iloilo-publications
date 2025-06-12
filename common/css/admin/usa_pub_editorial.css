@@ -1,0 +1,23 @@
+#preview-action,
+#message a {
+  display: none;
+}
+
+#post-body-content {
+  margin: 0px;  
+}
+
+#form_controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#form_controls > * {
+  flex: 0 1 480px;
+}
+
+#form_controls .form_control {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}

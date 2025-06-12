@@ -1,0 +1,32 @@
+#preview-action,
+#message a {
+  display: none;
+}
+
+#post-body-content {
+  margin: 0px;  
+}
+
+#input_wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#input_wrap > * {
+  flex: 0 1 380px;
+}
+
+#input_wrap .form_control {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+#input_wrap .form_control label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#input_wrap .form_control input {
+  width: 100%;
+}

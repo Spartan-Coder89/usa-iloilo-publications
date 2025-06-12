@@ -1,0 +1,14 @@
+#swatches_list {
+  margin-bottom: 5px;  
+}
+
+#swatches_list .swatch {
+  width: 20px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#selected_color {
+  color: rgb(255, 255, 255);
+}

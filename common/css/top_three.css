@@ -1,0 +1,124 @@
+#top_three {
+  padding-top: 35px;
+  /* padding-bottom: 80px; */
+}
+
+#top_three .paragraph {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+#top_three .top_one {
+  max-width: 100%;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+#top_three .top_one .post_thumbnail {
+  max-width: 63.008%;
+  height: 28vw;
+  min-height: 300px;
+  max-height: 400px;
+}
+
+#top_three .top_one .content {
+  width: 35.365%;
+}
+
+#top_three .top_one .content .post_title {
+  font-size: 32px;
+}
+
+#top_three .top_two_three {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.top_two_three > * {
+  flex: 1 1 600px;
+}
+
+#top_three .top_two_three > a {
+  max-width: 48.8%;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.top_two_three .horizontal_card {
+  max-width: 100%;
+}
+
+#top_three .top_two_three > :first-child {
+  margin-right: auto;
+}
+
+#top_three .top_two_three .content {
+  padding-top: 8px;
+  padding-bottom: 10px;
+}
+
+#top_three .top_two_three .horizontal_card .post_thumbnail {
+  height: 200px;
+}
+
+/* ------------- MEDIA QUERIES ------------- */
+
+@media( max-width:980px ) {
+  
+  #top_three .top_one .post_thumbnail {
+    max-width: 50%;
+  }
+  
+  #top_three .top_one .content {
+    width: 47%;
+  }
+
+  #top_three .top_two_three > a {
+    max-width: 100%;
+  }
+}
+
+@media( max-width:768px ) {
+  
+  #top_three .top_one .post_thumbnail {
+    max-width: 100%;
+    height: 400px;
+    max-height: none;
+    min-height: auto;
+  }
+
+  #top_three .top_one .content {
+    width: 100%;
+  }
+
+  #top_three .top_one .content {
+    padding-bottom: 0px;
+  }
+}
+
+@media( max-width:580px ) {
+
+  #top_three .top_one .post_thumbnail {
+    height: 69vw;  
+    min-height: 250px;
+  }
+  
+  #top_three .top_two_three .horizontal_card .post_thumbnail {
+    max-width: 100%;
+    height: 250px;
+  }
+
+  #top_three .top_two_three .content {
+    width: 100%;
+  }
+}
+
+@media( max-width:380px ) {
+
+  #top_three .top_one .content .post_title {
+    font-size: 24px;
+  }
+}

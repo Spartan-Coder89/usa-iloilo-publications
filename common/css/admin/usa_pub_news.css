@@ -1,0 +1,11 @@
+#news_metabox .news_highlight {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#news_metabox .news_highlight input {
+  width: 12px;
+  margin: 0px;
+  margin-right: 10px;
+}

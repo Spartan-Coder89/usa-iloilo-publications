@@ -1,0 +1,44 @@
+#wrap {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+#no_articles .heading {
+  font-size: 64px;
+  font-family: 'Open_Sans_Extrabold';
+  color: #B80717;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#no_articles .description {
+  font-size: 16px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+#no_articles .read_more span {
+  font-family: 'Open_Sans_Bold';
+  margin-right: 10px;
+  color: rgb(255 255 255);
+  line-height: 100%;
+}
+
+/* -------------- MEDIA QUERIES -------------- */
+
+@media( max-width:768px ) {
+
+  #no_articles {
+    padding-top: 15.625vw;
+    padding-bottom: 15.625vw;
+  }
+}
+
+
+@media( max-width:580px ) {
+  #no_articles .heading {
+    font-size: 11.034vw;
+    margin-bottom: 15px;
+  }
+}
